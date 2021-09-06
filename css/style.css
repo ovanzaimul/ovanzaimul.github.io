@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 8rem;
+  color: #fff;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.heading-primary span {
+  display: block;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+}
+.btn-cta {
+  color: #eee;
+  font-size: 1.3rem;
+  border: 1.5px solid #ff4c29;
+  transition: all 0.2s;
+}
+.btn-cta:hover {
+  background-color: #ff4c29;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+.btn-cta:active {
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.1rem);
+}
+
+.container {
+  background-color: #382933;
+  display: grid;
+  grid-template-rows: 85vh 40vw;
+  grid-template-columns: [sidenav-start] 7rem [sidenav-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.header {
+  grid-column: full-start/full-end;
+}
+
+.about {
+  background-color: #519872;
+  grid-column: center-start/center-end;
+}
+
+.project {
+  background-color: #a4b494;
+  grid-column: center-start/center-end;
+}
+
+.contact {
+  background-color: #ff4c29;
+  grid-column: center-start/center-end;
+}
+
+.footer {
+  background-color: coral;
+  grid-column: full-start/full-end;
+}
+
+.header {
+  padding: 8rem 6rem;
+}
+
+.sidenav {
+  background-color: #2b1f27;
+  box-shadow: 4px 0 10px -3px #000;
+  grid-column: sidenav-start/sidenav-end;
+  grid-row: 1/-1;
+  order: 99;
+  width: 7rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

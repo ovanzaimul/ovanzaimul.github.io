@@ -1,0 +1,16 @@
+body {
+  font-family: $font-display;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 8rem;
+  color: $color-white;
+  line-height: 1.1;
+  font-weight: 700;
+
+  span {
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  background-color: $background-color;
+
+  display: grid;
+  grid-template-rows: 85vh 40vw;
+  grid-template-columns:
+    [sidenav-start] 7rem [sidenav-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.header {
+  // background-color: $color-2;
+
+  grid-column: full-start/ full-end;
+}
+.about {
+  background-color: $color-3;
+
+  grid-column: center-start/ center-end;
+}
+.project {
+  background-color: $color-4;
+
+  grid-column: center-start/ center-end;
+}
+.contact {
+  background-color: $color-5;
+
+  grid-column: center-start/ center-end;
+}
+.footer {
+  background-color: coral;
+
+  grid-column: full-start/ full-end;
+}

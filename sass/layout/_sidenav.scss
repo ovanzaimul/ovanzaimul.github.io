@@ -1,0 +1,16 @@
+.sidenav {
+  // #251921
+  // background-color: $color-2;
+  background-color: #2b1f27;
+  box-shadow: $nav-shadow;
+
+  grid-column: sidenav-start/ sidenav-end;
+  grid-row: 1/-1;
+
+  order: 99;
+  width: 7rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
