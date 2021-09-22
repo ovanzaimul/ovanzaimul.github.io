@@ -9,18 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body class="container">
-    <nav class="sidenav">Sidenav</nav>
+    <!-- <nav class="sidenav">Sidenav</nav> -->
+
+    <nav class="nav">
+      <div class="nav__logo">OZ.</div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
     <header class="header">
       <h1 class="heading-primary u-margin-bottom-medium">
         <span>Hi,</span>
         <span>I'm Ovan</span>
         <span>Web Developer</span>
       </h1>
-      <a href="#" class="btn btn-cta">View my work</a>
+      <a href="#project" class="btn btn-cta">View my work</a>
     </header>
     <section class="about">About me + skills Section</section>
-    <section class="project">Project</section>
+    <section id="project" class="project">Project</section>
     <section class="contact">Contact Me</section>
     <footer class="footer">Footer</footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
