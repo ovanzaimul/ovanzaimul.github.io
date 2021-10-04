@@ -2,7 +2,7 @@
   font-size: 2rem;
   color: $color-white;
   padding: 2rem 6rem;
-
+  z-index: 11;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
 
   grid-column: full-start/full-end;
 
-  transition: all 0.2s;
+  transition: all 0.5s;
 
   &__logo {
     font-size: 2rem;
@@ -26,21 +26,50 @@
     display: flex;
   }
 
-  &__item {
-  }
+  // &__item {
+  // }
 
   &__link {
     text-decoration: none;
     color: inherit;
     padding: 1rem 2rem;
+    cursor: pointer;
     transition: all 0.2s;
 
-    &:hover {
-      color: $color-5;
+    //from codepen
+    position: relative;
+
+    // &::before {
+    //   transform: scaleX(0);
+    //   transform-origin: bottom right;
+    // }
+
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: rgba($color-5, 0.6);
+      z-index: -1;
+
+      transform: scaleX(0);
+      transform-origin: bottom right;
+
+      transition: transform 0.3s ease;
     }
   }
 
   &__background {
-    background-color: rgba($color-3, 0.8);
+    background-color: rgba($background-color, 0.9);
+    background-color: #2a2e35;
   }
 }

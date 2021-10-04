@@ -5,10 +5,16 @@ body {
 }
 
 .heading-primary {
-  font-size: 8rem;
-  color: $color-white;
+  color: #fafbfc;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: inherit;
+
+  &--main {
+    font-size: 7rem;
+  }
+  &--sub {
+    font-size: 36px;
+  }
 
   span {
     display: block;

@@ -13,20 +13,25 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.7;
   font-weight: 400;
 }
 
 .heading-primary {
-  font-size: 8rem;
-  color: #fff;
+  color: #fafbfc;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: inherit;
+}
+.heading-primary--main {
+  font-size: 7rem;
+}
+.heading-primary--sub {
+  font-size: 36px;
 }
 .heading-primary span {
   display: block;
@@ -54,11 +59,11 @@ body {
 .btn-cta {
   color: #eee;
   font-size: 1.3rem;
-  border: 1.5px solid #ff4c29;
+  border: 1.5px solid #519872;
   transition: all 0.2s;
 }
 .btn-cta:hover {
-  background-color: #ff4c29;
+  background-color: #519872;
   color: #fff;
   transform: translateY(-0.2rem);
   box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.2);
@@ -73,6 +78,9 @@ body {
   display: grid;
   grid-template-rows: 100vh 40vw;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+.container > * {
+  z-index: 10;
 }
 
 .header {
@@ -101,16 +109,81 @@ body {
 
 .header {
   padding: 8rem 6rem;
+  background-image: url("../../img/SVG/endless-constellation.svg");
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+}
+.header__content-box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__content-box > * {
+  z-index: 10;
+}
+.header #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  background-color: #301b3f;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-1 {
+  width: 80px;
+  height: 80px;
+  border: 7px solid #fff;
+  border-bottom-color: #ff4c29;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+
+.show {
+  opacity: 1;
+  z-index: 999;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 400ms;
+  z-index: 1;
 }
 
 .nav {
   font-size: 2rem;
   color: #fff;
   padding: 2rem 6rem;
+  z-index: 11;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,7 +191,7 @@ body {
   display: flex;
   justify-content: space-between;
   grid-column: full-start/full-end;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 .nav__logo {
   font-size: 2rem;
@@ -132,13 +205,32 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 1rem 2rem;
+  cursor: pointer;
   transition: all 0.2s;
+  position: relative;
 }
-.nav__link:hover {
-  color: #ff4c29;
+.nav__link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav__link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255, 76, 41, 0.6);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
 }
 .nav__background {
-  background-color: rgba(81, 152, 114, 0.8);
+  background-color: rgba(56, 41, 51, 0.9);
+  background-color: #2a2e35;
 }
 
 /*# sourceMappingURL=style.css.map */

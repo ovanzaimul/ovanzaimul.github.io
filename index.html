@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio - Ovan Zaimul</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   </head>
-  <body class="container">
+  <body class="">
+    <section id="loader" class="loader show"><span class="loader-1"></span></section>
     <!-- <nav class="sidenav">Sidenav</nav> -->
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__logo">OZ.</div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
 
-    <nav class="nav">
-      <div class="nav__logo">OZ.</div>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
+      <header class="header">
+        <div id="particles-js"></div>
+        <div class="header__content-box">
+          <h1 class="heading-primary u-margin-bottom-medium">
+            <span class="heading-primary--main">Ovan Zaimul</span>
+            <span class="heading-primary--sub">Web Developer</span>
+          </h1>
+          <a href="#project" class="btn btn-cta">View my work</a>
+        </div>
+      </header>
+      <section class="about">About me + skills Section</section>
+      <section id="project" class="project">Project</section>
+      <section class="contact">Contact Me</section>
+      <footer class="footer">Footer</footer>
+    </div>
 
-    <header class="header">
-      <h1 class="heading-primary u-margin-bottom-medium">
-        <span>Hi,</span>
-        <span>I'm Ovan</span>
-        <span>Web Developer</span>
-      </h1>
-      <a href="#project" class="btn btn-cta">View my work</a>
-    </header>
-    <section class="about">About me + skills Section</section>
-    <section id="project" class="project">Project</section>
-    <section class="contact">Contact Me</section>
-    <footer class="footer">Footer</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

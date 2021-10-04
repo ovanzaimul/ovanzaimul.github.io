@@ -13,11 +13,13 @@
     // color: #f7f7f7;
     color: #eee;
     font-size: 1.3rem;
-    border: 1.5px solid $color-5;
+    border: 1.5px solid $color-3;
     transition: all 0.2s;
 
+    //from codepen to
+
     &:hover {
-      background-color: $color-5;
+      background-color: $color-3;
       color: $color-white;
       transform: translateY(-0.2rem);
       box-shadow: 0 0.5rem 2.5rem rgba($color-black, 0.2);

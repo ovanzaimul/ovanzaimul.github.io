@@ -1,5 +1,9 @@
 const nav = document.querySelector('.nav');
 const header = document.querySelector('.header');
+const body = document.querySelector('body');
+const loaderEl = document.querySelector('#loader');
+console.log(loaderEl);
+
 console.log(header);
 
 const options = {
@@ -19,3 +23,15 @@ const observer = new IntersectionObserver((entries) => {
 }, options);
 
 observer.observe(header);
+
+particlesJS.load('particles-js', 'js/particles.json', function () {
+  console.log('particle is loaded....😎😎');
+  console.log('callback - particles.js config loaded');
+});
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    loaderEl.classList.add('hide');
+    loaderEl.classList.remove('show');
+  }, 1000);
+});
