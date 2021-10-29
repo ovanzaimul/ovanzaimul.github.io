@@ -2,10 +2,11 @@ body {
   font-family: $font-display;
   line-height: 1.7;
   font-weight: 400;
+  color: $color-white;
 }
 
 .heading-primary {
-  color: #fafbfc;
+  color: $color-white;
   line-height: 1.1;
   font-weight: inherit;
 
@@ -18,5 +19,35 @@ body {
 
   span {
     display: block;
+  }
+
+  &--dark {
+    color: $color-primary;
+  }
+}
+
+.heading-secondary {
+  color: $color-white;
+  font-size: 5rem;
+  &--dark {
+    color: $color-primary;
+  }
+}
+
+.heading-tertiary {
+  color: $color-white;
+  font-size: 2rem;
+
+  &--dark {
+    color: $color-primary;
+  }
+}
+
+.paragraph {
+  color: #b8c1ec;
+  font-size: 1.5rem;
+
+  &--dark {
+    color: $color-primary;
   }
 }

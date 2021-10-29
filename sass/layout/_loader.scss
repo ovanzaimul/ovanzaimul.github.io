@@ -1,5 +1,5 @@
 .loader {
-  background-color: $color-6;
+  background-color: $color-primary;
   min-width: 200px;
   width: 100%;
   height: 100%;
@@ -28,7 +28,7 @@
   width: 80px;
   height: 80px;
   border: 7px solid #fff;
-  border-bottom-color: $color-5;
+  border-bottom-color: $color-primary;
   border-radius: 50%;
   display: inline-block;
   animation: rotation 1s linear infinite;

@@ -1,0 +1,14 @@
+.projects {
+  display: grid;
+  // grid-template-rows: ;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  justify-content: center;
+  gap: 4rem;
+
+  padding: 8rem 0;
+
+  & > h2 {
+    grid-column: 1/-1;
+    margin-bottom: 3rem;
+  }
+}

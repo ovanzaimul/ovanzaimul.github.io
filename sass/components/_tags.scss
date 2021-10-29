@@ -1,0 +1,32 @@
+.tags {
+  padding: 3px 6px;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  color: $color-white;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &--sass {
+    background-color: #bf4080;
+    // color: $color-white;
+  }
+
+  &--html {
+    background-color: #f06529;
+  }
+
+  &--react {
+    background-color: #61dafb;
+  }
+
+  &--redux {
+    background-color: #593d88;
+  }
+
+  &--material-ui {
+    background-color: #3399ff;
+  }
+}

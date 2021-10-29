@@ -10,17 +10,16 @@
   }
 
   &-cta {
-    // color: #f7f7f7;
-    color: #eee;
+    color: $color-2;
     font-size: 1.3rem;
-    border: 1.5px solid $color-3;
+    border: 1.5px solid $color-1;
     transition: all 0.2s;
 
     //from codepen to
 
     &:hover {
-      background-color: $color-3;
-      color: $color-white;
+      background-color: $color-1;
+      color: $color-primary;
       transform: translateY(-0.2rem);
       box-shadow: 0 0.5rem 2.5rem rgba($color-black, 0.2);
     }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio - Ovan Zaimul</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body class="">
     <section id="loader" class="loader show"><span class="loader-1"></span></section>
@@ -15,27 +15,108 @@
       <nav class="nav">
         <div class="nav__logo">OZ.</div>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
 
-      <header class="header">
+      <header id="home" class="header">
         <div id="particles-js"></div>
         <div class="header__content-box">
           <h1 class="heading-primary u-margin-bottom-medium">
             <span class="heading-primary--main">Ovan Zaimul</span>
             <span class="heading-primary--sub">Web Developer</span>
           </h1>
-          <a href="#project" class="btn btn-cta">View my work</a>
+          <a href="#projects" class="btn btn-cta">View my work</a>
         </div>
       </header>
-      <section class="about">About me + skills Section</section>
-      <section id="project" class="project">Project</section>
-      <section class="contact">Contact Me</section>
-      <footer class="footer">Footer</footer>
+      <section id="about" class="about">
+        <h2 class="heading-secondary heading-secondary--dark">Who am i?</h2>
+        <p class="paragraph paragraph--dark">
+          Hello my name is Ovan Zaimul, i am a web developer, currently focused on front-end development.
+        </p>
+        <h3 class="heading-tertiary heading-tertiary--dark u-margin-bottom-small">always open to new technologies</h3>
+        <p class="paragraph paragraph--dark u-margin-bottom-medium">
+          I am passionate about web development, currently im focusing on front-end development and ...
+        </p>
+        <h3 class="heading-tertiary heading-tertiary--dark u-margin-bottom-small">turn design into code</h3>
+        <p class="paragraph paragraph--dark">i help designers turn into code and give pleasant user experience.</p>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="heading-secondary">PROJECTS</h2>
+
+        <div class="card">
+          <a href="https://edie-homepage-oz.netlify.app/" target="_blank" class="card__link">
+            <img class="card__img" src="/img/edie-homepage.png" alt="" />
+          </a>
+          <div class="card__box">
+            <a href="https://edie-homepage-oz.netlify.app/" target="_blank" class="card__link">
+              <h3 class="card__title">Edie-Homepage</h3>
+            </a>
+            <p class="card__description">This is website that i built based on figma design</p>
+            <div class="card__tools">
+              <span class="tags tags--sass">#sass</span>
+              <span class="tags tags--html">#html</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://chefsecret.netlify.app/" target="_blank" class="card__link">
+            <img class="card__img" src="/img/chef-secret.png" alt="" />
+          </a>
+          <div class="card__box">
+            <a href="https://chefsecret.netlify.app/" target="_blank" class="card__link">
+              <h3 class="card__title">Chef-secret</h3>
+            </a>
+            <p class="card__description">This is website that i built based on figma design</p>
+            <div class="card__tools">
+              <span class="tags tags--react">#react</span>
+              <span class="tags tags--redux">#redux</span>
+              <span class="tags tags--material-ui">#material-ui</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://weather-app-oz.netlify.app/" target="_blank" class="card__link">
+            <img class="card__img" src="/img/weather-app.png" alt="" />
+          </a>
+          <div class="card__box">
+            <a href="https://weather-app-oz.netlify.app/" target="_blank" class="card__link">
+              <h3 class="card__title">Weather App</h3>
+            </a>
+            <p class="card__description">
+              This is website that i built based on figma design provided by devchallenges.io
+            </p>
+            <div class="card__tools">
+              <span class="tags tags--react">#react</span>
+              <span class="tags tags--sass">#sass</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="contact" class="contact">Contact Me</section> -->
+      <footer id="footer" class="footer">
+        <h2 class="heading-secondary heading-secondary--dark">Get in touch</h2>
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://github.com/ovanzaimul" target="_blank" class="footer__link">Github</a>
+            </li>
+            <li class="footer__item">
+              <a href="https://www.linkedin.com/in/ovan-zaimul-0a319a194/" target="_blank" class="footer__link"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

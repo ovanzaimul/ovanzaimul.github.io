@@ -1,5 +1,5 @@
 .container {
-  background-color: $background-color;
+  background-color: $color-primary;
 
   display: grid;
   grid-template-rows: 100vh 40vw;
@@ -19,27 +19,12 @@
 }
 
 .header {
-  // background-color: $color-2;
-
   grid-column: full-start/ full-end;
 }
-.about {
-  background-color: $color-3;
 
-  grid-column: center-start/ center-end;
-}
-.project {
-  background-color: $color-4;
-
+.projects {
   grid-column: center-start/ center-end;
 }
 .contact {
-  background-color: $color-5;
-
   grid-column: center-start/ center-end;
-}
-.footer {
-  background-color: coral;
-
-  grid-column: full-start/ full-end;
 }

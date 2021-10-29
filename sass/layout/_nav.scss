@@ -1,6 +1,6 @@
 .nav {
   font-size: 2rem;
-  color: $color-white;
+  color: $color-2;
   padding: 2rem 6rem;
   z-index: 11;
   position: fixed;
@@ -36,40 +36,44 @@
     cursor: pointer;
     transition: all 0.2s;
 
-    //from codepen
-    position: relative;
-
-    // &::before {
-    //   transform: scaleX(0);
-    //   transform-origin: bottom right;
-    // }
-
-    &:hover::before {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-
-    &::before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      inset: 0 0 0 0;
-      background: rgba($color-5, 0.6);
-      z-index: -1;
-
-      transform: scaleX(0);
-      transform-origin: bottom right;
-
-      transition: transform 0.3s ease;
+    &:hover {
+      color: $color-white;
     }
   }
 
+  //from codepen
+  //   position: relative;
+
+  //   // &::before {
+  //   //   transform: scaleX(0);
+  //   //   transform-origin: bottom right;
+  //   // }
+
+  //   &:hover::before {
+  //     transform: scaleX(1);
+  //     transform-origin: bottom left;
+  //   }
+
+  //   &::before {
+  //     content: ' ';
+  //     display: block;
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //     // inset: 0 0 0 0;
+  //     background: rgba($color-5, 0.6);
+  //     z-index: -1;
+
+  //     transform: scaleX(0);
+  //     transform-origin: bottom right;
+
+  //     transition: transform 0.3s ease;
+  //   }
+  // }
+
   &__background {
-    background-color: rgba($background-color, 0.9);
-    background-color: #2a2e35;
+    background-color: $color-primary;
   }
 }
