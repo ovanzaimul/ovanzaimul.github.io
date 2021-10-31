@@ -2,7 +2,7 @@
   background-color: $color-primary;
 
   display: grid;
-  grid-template-rows: 100vh 40vw;
+  grid-template-rows: 100vh;
   // grid-template-columns:
   //   [sidenav-start] 7rem [sidenav-end full-start] minmax(6rem, 1fr) [center-start] repeat(
   //     8,
