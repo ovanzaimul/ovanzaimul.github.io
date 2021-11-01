@@ -1,7 +1,15 @@
 .projects {
+  // display: grid;
+  // // grid-template-rows: ;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  // justify-content: center;
+  // gap: 4rem;
+
+  // padding: 8rem 0;
+
   display: grid;
-  // grid-template-rows: ;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 450px));
+  grid-template-rows: auto;
   justify-content: center;
   gap: 4rem;
 
