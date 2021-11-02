@@ -24,6 +24,11 @@
     list-style: none;
 
     display: flex;
+
+    @media only screen and (max-width: 37.5em) {
+      //600
+      display: none;
+    }
   }
 
   // &__item {

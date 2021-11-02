@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -26,13 +31,27 @@ body {
 .heading-primary {
   color: #fff;
   line-height: 1.1;
-  font-weight: inherit;
 }
 .heading-primary--main {
   font-size: 7rem;
+  font-weight: 300;
+  letter-spacing: 0.85rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 5rem;
+  }
 }
 .heading-primary--sub {
-  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 0.85rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
 }
 .heading-primary span {
   display: block;
@@ -44,6 +63,11 @@ body {
 .heading-secondary {
   color: #fff;
   font-size: 5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
 }
 .heading-secondary--dark {
   color: #232946;
@@ -60,6 +84,11 @@ body {
 .paragraph {
   color: #b8c1ec;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .paragraph {
+    font-size: 1.6rem;
+  }
 }
 .paragraph--dark {
   color: #232946;
@@ -87,6 +116,11 @@ body {
   display: inline-block;
   border-radius: 2px;
   padding: 1rem 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .btn, .btn:link, .btn:visited {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-cta {
   color: #fffffe;
@@ -186,6 +220,12 @@ body {
   right: 2rem;
   width: 60%;
 }
+@media only screen and (max-width: 37.5em) {
+  .card__heading {
+    width: 85%;
+    font-size: 2rem;
+  }
+}
 .card__heading-span {
   padding: 1rem 1.5rem;
   -webkit-box-decoration-break: clone;
@@ -216,6 +256,7 @@ body {
 .card__built {
   color: #232946;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 .card__cta {
   position: absolute;
@@ -225,9 +266,14 @@ body {
   width: 90%;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 2rem;
   justify-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .card__cta {
+    gap: 0.5rem;
+  }
 }
 .card__description {
   color: #fff;
@@ -249,7 +295,6 @@ body {
   }
   .card__side--back {
     transform: rotateY(0);
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
   .card:hover .card__side--front {
     transform: rotateY(0);
@@ -257,9 +302,18 @@ body {
   .card__details {
     padding: 1rem 3rem;
   }
+}
+@media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+  .card__details {
+    padding: 0.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card__link, .card__link:visited, .card__link:link {
     color: #232946;
   }
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card__cta {
     position: relative;
     top: 0;
@@ -268,10 +322,22 @@ body {
     width: 100%;
     padding: 7rem 4rem 4rem 4rem;
   }
+}
+@media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+  .card__cta {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card__description {
     color: #232946;
     margin-bottom: 4rem;
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+  .card__description {
+    font-size: 1.6rem;
   }
 }
 
@@ -284,12 +350,32 @@ body {
   justify-items: center;
   gap: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .about {
+    grid-column: full-start/full-end;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about {
+    padding: 4rem 2rem;
+  }
+}
 .about__text {
   grid-column: 1/4;
+}
+@media only screen and (max-width: 43.75em) {
+  .about__text {
+    grid-column: 1/-1;
+  }
 }
 .about__list {
   font-size: 1.8rem;
   margin-left: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .about__list {
+    font-size: 1.6rem;
+  }
 }
 .about__item {
   color: #232946;
@@ -299,6 +385,11 @@ body {
 }
 .about__picture {
   grid-column: 4/-1;
+}
+@media only screen and (max-width: 43.75em) {
+  .about__picture {
+    grid-column: 1/-1;
+  }
 }
 .about__img {
   max-width: 100%;
@@ -353,10 +444,6 @@ body {
 
 .header {
   grid-column: full-start/full-end;
-}
-
-.projects {
-  grid-column: center-start/center-end;
 }
 
 .contact {
@@ -455,6 +542,11 @@ body {
   list-style: none;
   display: flex;
 }
+@media only screen and (max-width: 37.5em) {
+  .nav__list {
+    display: none;
+  }
+}
 .nav__link {
   text-decoration: none;
   color: inherit;
@@ -470,16 +562,29 @@ body {
 }
 
 .projects {
+  grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 450px));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 450px));
   grid-template-rows: auto;
   justify-content: center;
   gap: 4rem;
   padding: 8rem 0;
 }
+@media only screen and (max-width: 37.5em) {
+  .projects {
+    padding: 6rem 0;
+    grid-column: full-start/full-end;
+    gap: 2rem;
+  }
+}
 .projects > h2 {
   grid-column: 1/-1;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .projects > h2 {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
