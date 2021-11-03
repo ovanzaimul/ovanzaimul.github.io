@@ -337,7 +337,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
   .card__description {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -574,7 +574,6 @@ body {
   .projects {
     padding: 6rem 0;
     grid-column: full-start/full-end;
-    gap: 2rem;
   }
 }
 .projects > h2 {
